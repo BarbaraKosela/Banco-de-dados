@@ -1,0 +1,21 @@
+Data Connections no Server Explorer:
+
+--> Botão direito no data connection;
+--> Add connection;
+--> Microsoft SQL Server Database File (Escolher, continue);
+--> Database file name. - Ex:Hello_World_bd - (Nome do banco de dados, terminar com db);
+--> Ok e Sim;
+--> Botão direito no banco de dados criado, new Query;
+--> CREATE TABLE pessoas(
+	   nome VARCHAR(100),
+	   sobrenome VARCHAR(170));
+
+--> Botão execute no canto superior esquerdo para executar;
+
+--> INSERT INTO pessoas VALUES ('João', 'da Silva');
+
+--> Novo query, pegar o create table, dar ctrl x e colar em outro lugar;
+
+--> Adicionar mais um Query;
+
+--> SELECT * FROM pessoas;
