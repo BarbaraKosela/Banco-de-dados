@@ -1,4 +1,4 @@
-﻿
+﻿DROP TABLE jogadores;
 CREATE TABLE jogadores(
 	estado CHAR(2),
 	cidade VARCHAR(140),
@@ -10,7 +10,7 @@ CREATE TABLE jogadores(
 );
 
 INSERT INTO jogadores VALUES ('AC','Rio Branco','Ayrton Senna', '69.911-866', 'Estrada Deputado José Rui da Silveira Lino', 282, 'Casa');
-INSERT INTO jogadores (estado, cidade, bairro, cep, logradouro, numero)VALUES ('SC','Biguaçu','Fundos', '88.161-400', 'Rua Júlio Teodoro Martins', 995);
+INSERT INTO jogadores (estado, cidade, bairro, cep, numero)VALUES('SC','Biguaçu','Fundos', '88.161-400', 995);
 INSERT INTO jogadores VALUES ('MG','Santa Luzia','Padre Miguel', '33.082-050', 'Rua Buenos Aires', 371, 'Apartamento');
 INSERT INTO jogadores (estado, cidade, bairro, cep, logradouro, numero)VALUES ('BA','Salvador','São Tomé de Paripe', '40.800-361', 'Travessa Luís Hage', 685);
 INSERT INTO jogadores (estado, cidade, bairro, cep, logradouro, numero)VALUES ('MG','Ipatinga','Vila Celeste', '35.162-484', 'Rua Antônio Boaventura Batista', 645);
