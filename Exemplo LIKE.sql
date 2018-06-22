@@ -19,3 +19,5 @@ SELECT * FROM produtos WHERE nome LIKE 'Calabresa%';
 SELECT * FROM produtos WHERE nome LIKE '%Calabresa';
 -- BUSCAR CALABRESA EM QUALQUER PARTE
 SELECT * FROM produtos WHERE nome LIKE '%Calabresa%';
+
+
