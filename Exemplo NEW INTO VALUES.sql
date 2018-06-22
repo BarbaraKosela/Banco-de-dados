@@ -28,7 +28,7 @@ CREATE TABLE vendinhas(
 	SELECT MIN(preco) 'MENOR VALOR' FROM vendinhas; -- Menor preço
 	SELECT MAX(preco) 'MAIOR VALOR' FROM vendinhas; -- Maior preço
 
-
+	SELECT nome, LEN(nome) 'QUANTIDADE DE CARACTERES' FROM vendinhas WHERE LEN(nome) > 5 ORDER BY LEN(nome) DESC;
 
 	
 	
