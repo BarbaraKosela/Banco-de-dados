@@ -25,10 +25,12 @@ CREATE TABLE vendinhas(
 	/*SELECT preco FROM vendinhas;
 	SELECT AVG(preco) 'Total final' FROM vendinhas; -- Média*/
 
-	SELECT MIN(preco) 'MENOR VALOR' FROM vendinhas; -- Menor preço
-	SELECT MAX(preco) 'MAIOR VALOR' FROM vendinhas; -- Maior preço
+	/*SELECT MIN(preco) 'MENOR VALOR' FROM vendinhas; -- Menor preço
+	SELECT MAX(preco) 'MAIOR VALOR' FROM vendinhas; -- Maior preço*/
 
-	SELECT nome, LEN(nome) 'QUANTIDADE DE CARACTERES' FROM vendinhas WHERE LEN(nome) > 5 ORDER BY LEN(nome) DESC;
+	/*SELECT nome, LEN(nome) 'QUANTIDADE DE CARACTERES' FROM vendinhas WHERE LEN(nome) > 5 ORDER BY LEN(nome) DESC; -- QUANTIDADE DE CARACTERES*/
+	SELECT nome FROM vendinhas WHERE LEN(nome) = (SELECT MAX(LEN(nome)) FROM vendinhas); -- Maior nome
+	SELECT nome FROM vendinhas WHERE LEN(nome) = (SELECT MIN(LEN(nome)) FROM vendinhas); -- Menor nome
 
 	
 	
