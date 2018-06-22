@@ -22,8 +22,11 @@ CREATE TABLE vendinhas(
 	/*SELECT SUM(preco) FROM vendinhas; --Somar todos os registros por uma coluna;*/
 	--SELECT SUM(preco * quantidade) FROM vendinhas; 
 
-	SELECT preco FROM vendinhas;
-	SELECT AVG(preco) 'Total final' FROM vendinhas;
+	/*SELECT preco FROM vendinhas;
+	SELECT AVG(preco) 'Total final' FROM vendinhas; -- Média*/
+
+	SELECT MIN(preco) 'MENOR VALOR' FROM vendinhas; -- Menor preço
+	SELECT MAX(preco) 'MAIOR VALOR' FROM vendinhas; -- Maior preço
 
 
 
