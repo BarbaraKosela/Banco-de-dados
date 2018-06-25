@@ -27,7 +27,7 @@
                                                                             -- PARTE 2 -- 
 
 
-	-- EXERCÍCIO 01 : SELECT estado 'estado', cidade 'cidade' FROM cidadezinhas;
+	-- EXERCÍCIO 01 : SELECT estado 'estado', cidade 'cidade' FROM cidades;
 
 	-- EXERCÍCIO 02 : SELECT * FROM cidades WHERE cidade LIKE 'A%';
 
@@ -54,6 +54,21 @@
 	-- EXERCÍCIO 02 : SELECT nome, nota_1 'nota 1' FROM alunoos WHERE nota_1 > 9;
 
     -- EXERCÍCIO 03 : SELECT nome 'Nome', nota_1 'Nota 1', nota_2 'Nota 2', nota_3 'Nota 3', nota_4 'Nota 4', (nota_1 + nota_2 + nota_3 + nota_4) /4 'Média' FROM alunoos;
+
+	-- EXERCÍCIO 04 : SELECT COUNT(signo) AS 'QUANTIDADE DE PISCIANOS' FROM alunoos WHERE signo LIKE '%Peixes%';
+
+	-- EXERCÍCIO 05 : SELECT SUM(nota_1) 'Soma de primeiras notas' FROM alunoos;
+
+	-- EXERCÍCIO 06 : SELECT AVG(nota_2) 'Média de segundas notas' FROM alunoos;
+
+	-- EXERCÍCIO 07 : SELECT nome 'nome', nota_1 'nota 1' FROM alunoos WHERE  nota_1 = (SELECT MIN(nota_1) FROM alunoos);
+
+	-- EXERCÍCIO 08 : SELECT nome 'nome', nota_1 'Nota 1', nota_2 'Nota 2', nota_3 'Nota 3', nota_4 'Nota 4' FROM alunoos WHERE LEN(nome) = (SELECT MAX(LEN(nome)) FROM alunoos);
+
+	-- EXERCÍCIO 09 : SELECT COUNT(cor_preferida) AS 'QUANTIDADE DE CORES PREFERIDAS COM O TEMA GELO' FROM alunoos WHERE cor_preferida LIKE '%Gelo%';
+
+	-- EXERCÍCIO 10 : SELECT COUNT(nome) AS 'QUANTIDADE DE PESSOAS QUE COMEÇAM COM O NOME FRANCISCO' FROM alunoos WHERE nome LIKE 'Francisco%';
+
 
 
 
