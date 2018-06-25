@@ -69,9 +69,12 @@
 
 	-- EXERCÍCIO 10 : SELECT COUNT(nome) AS 'QUANTIDADE DE PESSOAS QUE COMEÇAM COM O NOME FRANCISCO' FROM alunoos WHERE nome LIKE 'Francisco%';
 
+	-- EXERCÍCIO 11 : SELECT COUNT(nome) AS 'QUANTIDADE DE PESSOAS QUE TEM LUC NO NOME' FROM alunoos WHERE nome LIKE '%Luc%';
 
+	-- EXERCÍCIO 12 : SELECT nome 'Nome', signo 'Signo', data_nascimento 'Data de nascimento' FROM alunoos WHERE signo LIKE '%Áries%';
 
-
+	-- EXERCÍCIO 13 : SELECT nome 'Nome', nota_1 'Nota 1', nota_2 'Nota 2', nota_3 'Nota 3', nota_4 'Nota 4', (nota_1 + nota_2 + nota_3 + nota_4) /4 'Média' FROM alunooS WHERE LEN((nota_1 + nota_2 + nota_3 + nota_4) /4) = (SELECT MAX(LEN((nota_1 + nota_2 + nota_3 + nota_4) /4)) FROM alunoos); 
 	
+
 
 	
