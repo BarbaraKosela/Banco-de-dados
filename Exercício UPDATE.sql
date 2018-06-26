@@ -1,4 +1,4 @@
-﻿SELECT * FROM cidades;
+﻿SELECT * FROM cidades ;
 
 /* EXERCÍCIO 1 : código estiver no intervalo de 50 a 100
 UPDATE pokemons SET categoria = 'Seed' WHERE codigo = 50;*/
@@ -46,3 +46,20 @@ UPDATE pokemons SET descricao = 'Lorem ipsum', nome = 'Tyranitar', categoria = '
 
 /* EXERCÍCIO 1 : estado for ‘sc’ estado SS
 UPDATE cidades SET estado = 'SS' WHERE estado = 'SC';*/
+
+/* EXERCÍCIO 2 : cidade for ‘Blumenau’ cidade Brumenau estado SC
+UPDATE cidades SET cidade = 'Brumenau', estado = 'SC' WHERE cidade = 'Blumenau';*/
+
+/* EXERCÍCIO 3 :  cidade que começar com ‘Bata’ cidade Batata
+UPDATE cidades SET cidade = 'Batata' WHERE cidade LIKE 'Bata%';*/
+
+/* EXERCÍCIO 4 : cidade que conter ‘Belo’ cidade trocar belo por Lindo
+UPDATE cidades SET cidade = 'Lindo' WHERE cidade LIKE '%Belo%';*/
+
+/* EXERCÍCIO 5 : cidade que começar com ‘Indaia’ estado SC 
+UPDATE cidades SET estado = 'SC' WHERE cidade LIKE 'Indaia%';*/
+
+/* EXERCÍCIO 6 : cidade que conter ‘Timbó’ estado SC 
+UPDATE cidades SET estado = 'SC' WHERE cidade LIKE 'Timbó';*/
+
+
