@@ -62,4 +62,17 @@ UPDATE cidades SET estado = 'SC' WHERE cidade LIKE 'Indaia%';*/
 /* EXERCÍCIO 6 : cidade que conter ‘Timbó’ estado SC 
 UPDATE cidades SET estado = 'SC' WHERE cidade LIKE 'Timbó';*/
 
+/* EXERCÍCIO 7 : cidade que conter ‘José’ cidade trocar ‘José’ por josué
+UPDATE cidades SET cidade = 'Josué' WHERE cidade LIKE '%José%';*/
 
+/* EXERCÍCIO 8 : estado que contém SP estado PS
+UPDATE cidades SET estado = 'PS' WHERE estado = 'SP'; */
+
+/* EXERCÍCIO 9 : cidade que o nome contém 10 caracteres cidade qualquer texto
+UPDATE cidades SET cidade = 'Qualquer texto :D' WHERE LEN(cidade) = 10;*/
+
+/* EXERCÍCIO 10 : cidade que começar com ‘It’ cidade It
+UPDATE cidades SET cidade = 'It' WHERE cidade LIKE 'It%';*/
+
+/* EXERCÍCIO 11 : cidade que termina com ‘ã’ estado TO
+UPDATE cidades SET estado = 'TO' WHERE cidade LIKE '%ã';*/
