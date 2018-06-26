@@ -38,3 +38,18 @@ DELETE FROM pokemons WHERE peso >= 100;
 
 -- 13. Apagar o(s) pokemon(s) que a altura seja menor que 1.
 DELETE FROM pokemons WHERE altura < 1;
+
+-- 14. Apagar o(s) pokemon(s) que contenham o poder de defesa especial maior que 3.
+DELETE FROM pokemons WHERE especial_defesa > 3;
+
+-- 15. Apagar o(s) pokemon(s) que a descrição contenha mais que 150 caracteres.
+
+
+-- 16. Apagar o(s) pokemon(s) que a descrição contenha ‘good’ em qualquer parte.
+DELETE FROM pokemons WHERE descricao LIKE '%Good%';
+
+-- 17. Apagar o(s) pokemon(s) que o código seja um número par.
+DELETE FROM pokemons WHERE codigo % 2 = 0;
+
+-- 18. Apagar o(s) pokemon(s) que o nome seja ‘Lileep’.
+DELETE FROM pokemons WHERE nome = 'Lileep';
