@@ -53,3 +53,9 @@ DELETE FROM pokemons WHERE codigo % 2 = 0;
 
 -- 18. Apagar o(s) pokemon(s) que o nome seja ‘Lileep’.
 DELETE FROM pokemons WHERE nome = 'Lileep';
+
+-- 19. Apagar o(s) pokemon(s) que contenham o poder de ataque especial 5.
+DELETE FROM pokemons WHERE especial_ataque = 5;
+
+-- 20. Apagar o(s) pokemon(s) que a código seja menor que 100.
+DELETE FROM pokemons WHERE codigo < 100;
