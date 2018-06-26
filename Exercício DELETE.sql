@@ -22,4 +22,19 @@ DELETE FROM pokemons WHERE LEN(nome) = 10;
 DELETE FROM pokemons WHERE LEN(nome) = 10;
 
 -- 8. Apagar o(s) pokemon(s) que a velocidade seja um número ímpar.
-DELETE FROM pokemons WHERE LEN(nome) = 10;
+DELETE FROM pokemons WHERE velocidade % 2 = 1;
+
+-- 9. Apagar o(s) pokemon(s) que o nome comece com ‘Uno’ ou ‘Charm’.
+DELETE FROM pokemons WHERE nome LIKE 'Uno%' OR  nome LIKE 'Charm%';
+
+-- 10. Apagar o(s) pokemon(s) que contenham a categoria ‘Flower’ e o código esteja entre 45 e 200.
+DELETE FROM pokemons WHERE categoria Like '%Flower%' AND codigo > 45 AND codigo < 200;
+
+-- 11. Apagar o(s) pokemon(s) que a descrição contenha ‘shell’.
+DELETE FROM pokemons WHERE descricao LIKE '%Shell%';
+
+-- 12. Apagar o(s) pokemon(s) que o peso seja maior ou igual a 100.
+DELETE FROM pokemons WHERE peso >= 100;
+
+-- 13. Apagar o(s) pokemon(s) que a altura seja menor que 1.
+DELETE FROM pokemons WHERE altura < 1;
