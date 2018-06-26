@@ -1,4 +1,4 @@
-﻿SELECT * FROM pokemons;
+﻿SELECT * FROM pokemons ORDER BY nome;
 
 /* EXERCÍCIO 1 : código estiver no intervalo de 50 a 100
 UPDATE pokemons SET categoria = 'Seed' WHERE codigo = 50;*/
@@ -22,5 +22,14 @@ UPDATE pokemons SET altura = 0.51, peso = 0.70 WHERE altura = 0.5;*/
 ataque 1, ataque especial 3, defesa especial 4 
 UPDATE pokemons SET codigo = 1, defesa = 1, ataque =1, especial_ataque =3, especial_defesa = 4 WHERE especial_defesa = 3 AND especial_ataque = 4;*/
 
-/* EXERCÍCIO 7 : nome contiver mais 10 caracteres nome obter somente os dez caracteres do nome*/
-UPDATE pokemons SET nome = 10 WHERE nome > 10; 
+/* EXERCÍCIO 8 : nome contiver mais 10 caracteres nome obter somente os dez caracteres do nome
+UPDATE pokemons SET nome = 10 WHERE nome > 10; */
+
+/* EXERCÍCIO 9 : descrição contiver flames categoria 
+UPDATE pokemons SET categoria = 'water' WHERE descricao = 'flames';*/
+
+/* EXERCÍCIO 10 : código for 155 código 151
+UPDATE pokemons SET codigo = 151 WHERE codigo = 155;*/
+
+/* EXERCÍCIO 11 : nome for Kabuto nome Naruto ataque 1*/
+UPDATE pokemons SET nome = 'Sasuke', ataque = 1 WHERE nome = 'Kabuto';
