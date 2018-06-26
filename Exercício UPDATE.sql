@@ -91,5 +91,18 @@ UPDATE alunoos SET ROUND numero_favorito WHERE nome % 2 = 1; */
 /* EXERCÍCIO 4 : signo for peixes signo Áries número favorito 100 cor preferida preto nome Marcela
 UPDATE alunoos SET signo = 'Áries', numero_favorito = 100, cor_preferida = 'Preto', nome = 'Marcela' WHERE signo = 'Peixes';*/
 
+/* EXERCÍCIO 5 : cor preferida for cáqui cor preferida azul nota 2 9.3 
+UPDATE alunoos SET cor_preferida = 'Azul', nota_2 = 9.3 WHERE cor_preferida = 'Cáqui'; */
 
+/* EXERCÍCIO 6 : cpf for ‘10194731189’ cpf 101.947.311-89 
+UPDATE alunoos SET cpf = '101.947.311-89' WHERE cpf = '101.947.311-89';*/
 
+/* EXERCÍCIO 7 : nome terminar com ‘Goes’*/
+
+/* EXERCÍCIO 8 : média for menor que 4 nota 1 1 nota 2 1 nota 3 1 nota 4 1
+UPDATE alunoos SET nota_1 = 1, nota_2 = 1, nota_3 =1 , nota_4 =1 WHERE (nota_1 + nota_2 + nota_3 + nota_4) /4 < 4;*/
+
+/* EXERCÍCIO 9 : data de nascimento o dia for trinta e um data nascimento trocar o dia para 30
+UPDATE alunoos SET  data_nascimento = 30 WHERE DAY(data_nascimento) = 31;*/
+
+/* EXERCÍCIO 10 : */
