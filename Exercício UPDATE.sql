@@ -1,7 +1,7 @@
-﻿SELECT * FROM cidades ;
+﻿SELECT * FROM alunoos ORDER BY nome;
 
 /* EXERCÍCIO 1 : código estiver no intervalo de 50 a 100
-UPDATE pokemons SET categoria = 'Seed' WHERE codigo = 50;*/
+UPDATE pokemons SET categoria = 'Seed' WHERE codigo = 50 > AND codigo < 100;*/
 
 /* EXERCÍCIO 2 : nome conter ‘inj’ = ataque 29
 UPDATE pokemons SET ataque = 29 WHERE nome LIKE '%inj%';*/
@@ -76,3 +76,20 @@ UPDATE cidades SET cidade = 'It' WHERE cidade LIKE 'It%';*/
 
 /* EXERCÍCIO 11 : cidade que termina com ‘ã’ estado TO
 UPDATE cidades SET estado = 'TO' WHERE cidade LIKE '%ã';*/
+
+                                                                   ---- PARTE 3 ----
+
+/* EXERCÍCIO 1 : ano for 1996 nota 1 9.9
+UPDATE alunoos SET nota_1 = 9.9 WHERE YEAR(data_nascimento) = 1996;*/
+
+/* EXERCÍCIO 2 : nome começar com ‘Urbano’ nota 2 1.3 
+UPDATE alunoos SET nota_2 = 1.3 WHERE nome LIKE 'Urbano%';*/
+
+/* EXERCÍCIO 3 : número favorito for ímpar número random
+UPDATE alunoos SET ROUND numero_favorito WHERE nome % 2 = 1; */
+
+/* EXERCÍCIO 4 : signo for peixes signo Áries número favorito 100 cor preferida preto nome Marcela
+UPDATE alunoos SET signo = 'Áries', numero_favorito = 100, cor_preferida = 'Preto', nome = 'Marcela' WHERE signo = 'Peixes';*/
+
+
+
