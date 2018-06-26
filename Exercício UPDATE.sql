@@ -1,4 +1,4 @@
-﻿SELECT * FROM pokemons ORDER BY nome;
+﻿SELECT * FROM cidades;
 
 /* EXERCÍCIO 1 : código estiver no intervalo de 50 a 100
 UPDATE pokemons SET categoria = 'Seed' WHERE codigo = 50;*/
@@ -31,5 +31,18 @@ UPDATE pokemons SET categoria = 'water' WHERE descricao = 'flames';*/
 /* EXERCÍCIO 10 : código for 155 código 151
 UPDATE pokemons SET codigo = 151 WHERE codigo = 155;*/
 
-/* EXERCÍCIO 11 : nome for Kabuto nome Naruto ataque 1*/
-UPDATE pokemons SET nome = 'Sasuke', ataque = 1 WHERE nome = 'Kabuto';
+/* EXERCÍCIO 11 : nome for Kabuto nome Naruto ataque 1
+UPDATE pokemons SET nome = 'Sasuke', ataque = 1 WHERE nome = 'Kabuto';*/
+
+/* EXERCÍCIO 12 : nome for Mew ou nome for Mewtwo nome Sasuke ataque especial 8002 ataque 8001
+UPDATE pokemons SET nome = 'Sasuke', ataque = 8001, especial_ataque = 8002 WHERE nome = 'Mew' OR nome = 'Mewtwo';*/
+
+/* EXERCÍCIO 13 : código que for número par descrição Lorem ipsum. nome Tyranitar categoria Wood Gecko
+UPDATE pokemons SET descricao = 'Lorem ipsum', nome = 'Tyranitar', categoria = 'Wood Gecko' WHERE codigo % 2 = 0;*/
+
+
+
+                                                                   ---- PARTE 2 ----
+
+/* EXERCÍCIO 1 : estado for ‘sc’ estado SS
+UPDATE cidades SET estado = 'SS' WHERE estado = 'SC';*/
