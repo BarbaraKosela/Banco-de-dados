@@ -43,7 +43,7 @@ DELETE FROM pokemons WHERE altura < 1;
 DELETE FROM pokemons WHERE especial_defesa > 3;
 
 -- 15. Apagar o(s) pokemon(s) que a descrição contenha mais que 150 caracteres.
-
+DELETE FROM pokemons WHERE DATALENGTH(descricao) > 150;
 
 -- 16. Apagar o(s) pokemon(s) que a descrição contenha ‘good’ em qualquer parte.
 DELETE FROM pokemons WHERE descricao LIKE '%Good%';
