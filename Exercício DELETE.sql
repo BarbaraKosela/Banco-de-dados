@@ -1,4 +1,4 @@
-﻿SELECT * FROM alunoos;
+﻿SELECT * FROM alunoos ORDER BY cor_preferida;
 
 -- 1. Apagar o(s) pokemon(s) que a categoria seja ‘Seed’.
 DELETE FROM pokemons WHERE categoria = 'Seed';
@@ -43,7 +43,7 @@ DELETE FROM pokemons WHERE altura < 1;
 DELETE FROM pokemons WHERE especial_defesa > 3;
 
 -- 15. Apagar o(s) pokemon(s) que a descrição contenha mais que 150 caracteres.
-DELETE FROM pokemons WHERE LEN(descricao) > 150;
+
 
 -- 16. Apagar o(s) pokemon(s) que a descrição contenha ‘good’ em qualquer parte.
 DELETE FROM pokemons WHERE descricao LIKE '%Good%';
@@ -100,4 +100,22 @@ DELETE FROM alunoos WHERE signo = 'Gêmios';
 DELETE FROM alunoos WHERE nome LIKE 'Reinaldo%';
 
 -- 5. Apagar o(s) aluno(s) que o nome acabe com ‘Carvalho’.
+DELETE FROM alunoos WHERE nome LIKE '%Carvalho';
 
+-- 6. Apagar o(s) aluno(s) que que nasceram no mês de julho.
+DELETE FROM alunoos WHERE MONTH(data_nascimento) = 7;
+
+-- 7. Apagar o(s) aluno(s) que nota1 for maior que a nota 2 e a nota 4 for menor que a nota 3.
+DELETE FROM alunoos WHERE nota_1 > nota_2 AND nota_4 < nota_3;
+
+-- 8. Apagar o(s) aluno(s) que o cpf comece com ‘145.’
+DELETE FROM alunoos WHERE cpf LIKE '145.%';
+
+-- 9. Apagar o(s) aluno(s) que a cor preferida seja ‘Bordo’ e o signo seja ‘Capricórnio’ ou a cor preferida ‘Cinza-claro’ e o signo seja ‘Aquários’.
+DELETE FROM alunoos WHERE cor_preferida = 'Bordô' AND signo = 'Capricórnio' OR cor_preferida = 'Cinza-claro' AND signo = 'Aquarios';
+
+-- 10. Apagar o(s) aluno(s) que a média seja menor que 4.
+DELETE FROM alunoos WHERE ((nota_1 + nota_2 + nota_3 + nota_4) /4) < 4;
+
+-- 11. Apagar o(s) aluno(s) que o dia de nascimento seja 28.
+DELETE FROM alunoos WHERE DAY(data_nascimento) = 28;
