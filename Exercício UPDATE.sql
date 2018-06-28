@@ -22,7 +22,7 @@ UPDATE pokemons SET altura = 0.51, peso = 0.70 WHERE altura = 0.5;
 UPDATE pokemons SET codigo = 1, defesa = 1, ataque =1, especial_ataque =3, especial_defesa = 4 WHERE especial_defesa = 3 AND especial_ataque = 4;
 
 --  EXERCÍCIO 8 : nome contiver mais 10 caracteres nome obter somente os dez caracteres do nome
-UPDATE pokemons SET nome = 10 WHERE LEN(nome) > 10; 
+UPDATE pokemons SET nome = '10 caracteres' WHERE LEN(nome) > 10; 
 
 --  EXERCÍCIO 9 : descrição contiver flames categoria 
 UPDATE pokemons SET categoria = 'water' WHERE descricao = 'flames';
@@ -94,7 +94,7 @@ UPDATE alunoos SET signo = 'Áries', numero_favorito = 100, cor_preferida = 'Pre
 UPDATE alunoos SET cor_preferida = 'Azul', nota_2 = 9.3 WHERE cor_preferida = 'Cáqui'; 
 
 --  EXERCÍCIO 6 : cpf for ‘10194731189’ cpf 101.947.311-89 
-UPDATE alunoos SET cpf = '10194731189' WHERE cpf = '101.947.311-89';
+UPDATE alunoos SET cpf = '101.947.311-89' WHERE cpf = '10194731189';
 
 --  EXERCÍCIO 7 : nome terminar com ‘Goes’
 
