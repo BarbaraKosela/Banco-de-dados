@@ -22,7 +22,7 @@ UPDATE pokemons SET altura = 0.51, peso = 0.70 WHERE altura = 0.5;
 UPDATE pokemons SET codigo = 1, defesa = 1, ataque =1, especial_ataque =3, especial_defesa = 4 WHERE especial_defesa = 3 AND especial_ataque = 4;
 
 --  EXERCÍCIO 8 : nome contiver mais 10 caracteres nome obter somente os dez caracteres do nome
-UPDATE pokemons SET nome = '10 caracteres' WHERE LEN(nome) > 10; 
+UPDATE pokemons SET nome = SUBSTRING(nome, 10, 10) WHERE nome > 10;
 
 --  EXERCÍCIO 9 : descrição contiver flames categoria 
 UPDATE pokemons SET categoria = 'water' WHERE descricao LIKE '%flames%';
@@ -62,7 +62,7 @@ UPDATE cidades SET estado = 'SC' WHERE cidade LIKE 'Indaia%';
 UPDATE cidades SET estado = 'SC' WHERE cidade LIKE 'Timbó';
 
 --  EXERCÍCIO 7 : cidade que conter ‘José’ cidade trocar ‘José’ por josué
-UPDATE cidades SET cidade = 'Josué' WHERE cidade LIKE '%José%';
+UPDATE cidades SET cidade = replace(cidade,'Josué', 'José');
 
 --  EXERCÍCIO 8 : estado que contém SP estado PS
 UPDATE cidades SET estado = 'PS' WHERE estado = 'SP'; 
@@ -85,7 +85,7 @@ UPDATE alunoos SET nota_1 = 9.9 WHERE YEAR(data_nascimento) = 1996;
 UPDATE alunoos SET nota_2 = 1.3 WHERE nome LIKE 'Urbano%';
 
 --  EXERCÍCIO 3 : número favorito for ímpar número random
-UPDATE alunos SET numero_favorito = RAND(numero_favorito) WHERE numero_favorito %2 = 1;
+--UPDATE alunos SET numero_favorito = (ROUND((RAND() * 100), 0)) WHERE numero_favorito %2 != 0;
 
 --  EXERCÍCIO 4 : signo for peixes signo Áries número favorito 100 cor preferida preto nome Marcela
 UPDATE alunoos SET signo = 'Áries', numero_favorito = 100, cor_preferida = 'Preto', nome = 'Marcela' WHERE signo = 'Peixes';
