@@ -13,7 +13,7 @@ UPDATE pokemons SET velocidade = 2 WHERE velocidade = 5;
 UPDATE pokemons SET categoria = 'Manipulate' WHERE codigo = 100;
 
 --  EXERCÍCIO 5 : nome começar com R nome trocar primeira letra por C 
-UPDATE pokemons SET nome = 'C%' WHERE nome LIKE 'R%';
+UPDATE pokemons SET nome = Replace(nome,'C','R');
 
 --  EXERCÍCIO 6 : altura for 0.5 altura 0.51 peso 0.70
 UPDATE pokemons SET altura = 0.51, peso = 0.70 WHERE altura = 0.5; 
@@ -25,7 +25,7 @@ UPDATE pokemons SET codigo = 1, defesa = 1, ataque =1, especial_ataque =3, espec
 UPDATE pokemons SET nome = '10 caracteres' WHERE LEN(nome) > 10; 
 
 --  EXERCÍCIO 9 : descrição contiver flames categoria 
-UPDATE pokemons SET categoria = 'water' WHERE descricao = 'flames';
+UPDATE pokemons SET categoria = 'water' WHERE descricao LIKE '%flames%';
 
 --  EXERCÍCIO 10 : código for 155 código 151
 UPDATE pokemons SET codigo = 151 WHERE codigo = 155;
