@@ -1,4 +1,4 @@
-﻿SELECT * FROM alunoos ORDER BY nome;
+﻿SELECT * FROM pokemons;
 
 /* EXERCÍCIO 1 : código estiver no intervalo de 50 a 100
 UPDATE pokemons SET categoria = 'Seed' WHERE codigo = 50 > AND codigo < 100;*/
@@ -22,8 +22,8 @@ UPDATE pokemons SET altura = 0.51, peso = 0.70 WHERE altura = 0.5;*/
 ataque 1, ataque especial 3, defesa especial 4 
 UPDATE pokemons SET codigo = 1, defesa = 1, ataque =1, especial_ataque =3, especial_defesa = 4 WHERE especial_defesa = 3 AND especial_ataque = 4;*/
 
-/* EXERCÍCIO 8 : nome contiver mais 10 caracteres nome obter somente os dez caracteres do nome
-UPDATE pokemons SET nome = 10 WHERE nome > 10; */
+/* EXERCÍCIO 8 : nome contiver mais 10 caracteres nome obter somente os dez caracteres do nome*/
+UPDATE pokemons SET nome = 10 WHERE LEN(nome) > 10; 
 
 /* EXERCÍCIO 9 : descrição contiver flames categoria 
 UPDATE pokemons SET categoria = 'water' WHERE descricao = 'flames';*/
@@ -103,7 +103,7 @@ UPDATE alunoos SET cpf = '10194731189' WHERE cpf = '101.947.311-89';*/
 UPDATE alunoos SET nota_1 = 1, nota_2 = 1, nota_3 =1 , nota_4 =1 WHERE (nota_1 + nota_2 + nota_3 + nota_4) /4 < 4;*/
 
 /* EXERCÍCIO 9 : data de nascimento o dia for trinta e um data nascimento trocar o dia para 30
-UPDATE alunoos SET  data_nascimento = 30 WHERE DAY(data_nascimento) = 31;*/
+UPDATE alunoos SET data_nascimento =  DATEFROMPARTS(YEAR, MONTH, 30) WHERE DAY(data_nascimento) = 31;*/
 
 /* EXERCÍCIO 10 : cor preferida for roxo ou coral cor preferida roxo categoria Roxolandia 
 UPDATE alunoos SET cor_preferida = 'Roxo' WHERE cor_preferida = 'Roxo' OR cor_preferida = 'Coral';*/
