@@ -95,7 +95,13 @@
 	
 	-- EXERCÍCIO 23 : SELECT nome, nick, nota_4, nota_2 FROM alunoos WHERE nota_2 > 5.0 AND nota_2 < 5.99; 
 
-	-- EXERCÍCIO 24 :
+	-- EXERCÍCIO 24 : SELECT nome, ((nota_1 + nota_2 + nota_3 + nota_4) /4) AS 'Média' FROM alunoos WHERE nome LIKE '%Josefina%';
+
+	-- EXERCÍCIO 25 : SELECT nome, nick, nota_1, nota_2, nota_3, nota_4 FROM alunoos WHERE nome LIKE '%Justino%' AND signo LIKE 'A%';
+
+	-- EXERCÍCIO 26 : SELECT AVG((nota_1 + nota_2 + nota_3 + nota_4) /4) 'Média das médias' FROM alunoos;
+
+
 
 
 
