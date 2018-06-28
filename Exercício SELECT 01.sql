@@ -75,6 +75,12 @@
 
 	-- EXERCÍCIO 13 : SELECT nome 'Nome', nota_1 'Nota 1', nota_2 'Nota 2', nota_3 'Nota 3', nota_4 'Nota 4', (nota_1 + nota_2 + nota_3 + nota_4) /4 'Média' FROM alunoos WHERE LEN('Média') = (SELECT MAX(LEN('Média')) FROM alunoos) ORDER BY 'Média' DESC;
 
+	-- EXERCÍCIO 14 : SELECT nome, ((nota_1 + nota_2 + nota_3 + nota_4) / 4) AS 'Média', IIF(((nota_1 + nota_2 + nota_3 + nota_4)/4) < 5, 'Reprovado', 'Aprovado') FROM alunoos;
+
+    -- EXERCÍCIO 15 :  Selecione o nome, nota 1, nota 2, nota 3, nota 4 com o menor média.
+
+	-- EXERCÍCIO 16 : SELECT nome 'Nome', nota_1 'Nota 1', nota_2 'Nota 2', nota_3 'Nota 3', nota_4 'Nota 4', (nota_1 + nota_2 + nota_3 + nota_4) /4 'Média' FROM alunoos WHERE LEN('Média') = (SELECT MIN(LEN('Média')) FROM alunoos) ORDER BY 'Média' ASC;
+	
 
 
 	
