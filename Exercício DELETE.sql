@@ -1,4 +1,4 @@
-﻿SELECT * FROM alunoos ORDER BY cor_preferida;
+﻿SELECT * FROM alunoos;
 
 -- 1. Apagar o(s) pokemon(s) que a categoria seja ‘Seed’.
 DELETE FROM pokemons WHERE categoria = 'Seed';
@@ -85,7 +85,7 @@ DELETE FROM cidades WHERE estado LIKE 'MG';
 DELETE FROM cidades WHERE cidade LIKE 'Douradina';
 
 
-                                                                     ---PARTE 2---
+                                                                     ---PARTE 3---
 
 -- 1. Apagar o(s) aluno(s) que o nome contenha ‘Francisco’.
 DELETE FROM alunoos WHERE nome LIKE '%Francisco%';
