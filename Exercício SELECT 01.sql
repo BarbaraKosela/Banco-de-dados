@@ -77,10 +77,26 @@
 
 	-- EXERCÍCIO 14 : SELECT nome, ((nota_1 + nota_2 + nota_3 + nota_4) / 4) AS 'Média', IIF(((nota_1 + nota_2 + nota_3 + nota_4)/4) < 5, 'Reprovado', 'Aprovado') FROM alunoos;
 
-    -- EXERCÍCIO 15 :  Selecione o nome, nota 1, nota 2, nota 3, nota 4 com o menor média.
+	-- EXERCÍCIO 15 : SELECT nome 'Nome', nota_1 'Nota 1', nota_2 'Nota 2', nota_3 'Nota 3', nota_4 'Nota 4', (nota_1 + nota_2 + nota_3 + nota_4) /4 'Média' FROM alunoos WHERE LEN('Média') = (SELECT MIN(LEN('Média')) FROM alunoos) ORDER BY 'Média' ASC;
+    
+	-- EXERCÍCIO 16 : SELECT COUNT(nome) AS 'Quantidade' FROM alunoos WHERE ((nota_1 + nota_2 + nota_3 + nota_4) /4) > 7;
 
-	-- EXERCÍCIO 16 : SELECT nome 'Nome', nota_1 'Nota 1', nota_2 'Nota 2', nota_3 'Nota 3', nota_4 'Nota 4', (nota_1 + nota_2 + nota_3 + nota_4) /4 'Média' FROM alunoos WHERE LEN('Média') = (SELECT MIN(LEN('Média')) FROM alunoos) ORDER BY 'Média' ASC;
+	-- EXERCÍCIO 17 : SELECT nome, nick FROM alunoos WHERE LEN(nick) = 5;
+
+	-- EXERCÍCIO 18 : SELECT nome FROM alunoos WHERE cor_preferida = 'ouro' OR cor_preferida = 'amarelo-torrado' AND ((nota_1 + nota_2 + nota_3 + nota_4) /4) > 6.5;
+
+	-- EXERCÍCIO 19 : SELECT nome, YEAR(data_nascimento) 'Ano' FROM alunoos;
+
+	-- EXERCÍCIO 20 : SELECT nome, MONTH(data_nascimento) FROM alunoos WHERE MONTH(data_nascimento) > 6;
+
+	-- EXERCÍCIO 21 : SELECT COUNT(data_nascimento) AS 'Os de 1996' FROM alunoos WHERE YEAR(data_nascimento) = 1996;
+
+	-- EXERCÍCIO 22 : SELECT COUNT(data_nascimento) AS 'Quantidade de pessoas' FROM alunoos WHERE YEAR(data_nascimento) = 1964 AND DAY(data_nascimento) = 2 AND MONTH(data_nascimento) = 2 OR YEAR(data_nascimento) = 1994;
 	
+	-- EXERCÍCIO 23 : SELECT nome, nick, nota_4, nota_2 FROM alunoos WHERE nota_2 > 5.0 AND nota_2 < 5.99; 
+
+	-- EXERCÍCIO 24 :
+
 
 
 	
