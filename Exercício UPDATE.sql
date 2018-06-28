@@ -22,7 +22,7 @@ UPDATE pokemons SET altura = 0.51, peso = 0.70 WHERE altura = 0.5;
 UPDATE pokemons SET codigo = 1, defesa = 1, ataque =1, especial_ataque =3, especial_defesa = 4 WHERE especial_defesa = 3 AND especial_ataque = 4;
 
 --  EXERCÍCIO 8 : nome contiver mais 10 caracteres nome obter somente os dez caracteres do nome
-UPDATE pokemons SET nome = SUBSTRING(nome, 10, 10) WHERE nome > 10;
+UPDATE pokemons SET nome = SUBSTRING(nome, 1, 10) WHERE LEN(nome) > 10;
 
 --  EXERCÍCIO 9 : descrição contiver flames categoria 
 UPDATE pokemons SET categoria = 'water' WHERE descricao LIKE '%flames%';
